@@ -1,0 +1,7 @@
+/home/siddharth/vscode/otherprojects/qtprojects/ponggame/build/Desktop_Qt_6_7_0-Release/CMakeFiles/ponggame.dir
+/home/siddharth/vscode/otherprojects/qtprojects/ponggame/build/Desktop_Qt_6_7_0-Release/CMakeFiles/edit_cache.dir
+/home/siddharth/vscode/otherprojects/qtprojects/ponggame/build/Desktop_Qt_6_7_0-Release/CMakeFiles/rebuild_cache.dir
+/home/siddharth/vscode/otherprojects/qtprojects/ponggame/build/Desktop_Qt_6_7_0-Release/CMakeFiles/list_install_components.dir
+/home/siddharth/vscode/otherprojects/qtprojects/ponggame/build/Desktop_Qt_6_7_0-Release/CMakeFiles/install.dir
+/home/siddharth/vscode/otherprojects/qtprojects/ponggame/build/Desktop_Qt_6_7_0-Release/CMakeFiles/install/local.dir
+/home/siddharth/vscode/otherprojects/qtprojects/ponggame/build/Desktop_Qt_6_7_0-Release/CMakeFiles/install/strip.dir
