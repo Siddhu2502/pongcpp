@@ -12,22 +12,34 @@ int aiscore = 0;
 Texture2D texture;
 
 void screen() {
-    DrawTexturePro(
-        texture,
-        (Rectangle){ 0, 0, (float)texture.width, (float)texture.height },
-        (Rectangle){ 0, 0, (float)screenWidth, (float)screenHeight },
-        (Vector2){ 0, 0 },
-        0.0f,
-        WHITE
-        );
+    // Clear the background with a green color (like a tennis court)
+    ClearBackground(DARKGREEN);
+
+    // Draw the playfield lines
+    // Outer border
+    DrawRectangleLines(10, 10, screenWidth - 20, screenHeight - 20, WHITE);
+
+    // Center line (dotted)
+    for (int i = 10; i < screenHeight - 10; i += 20) {
+        DrawRectangle(screenWidth / 2 - 2, i, 4, 10, WHITE);
+    }
+
+    // Service boxes (if needed for more detail)
+    DrawLine(screenWidth / 4, 10, screenWidth / 4, screenHeight - 10, WHITE);
+    DrawLine(3 * screenWidth / 4, 10, 3 * screenWidth / 4, screenHeight - 10, WHITE);
+
+    // Additional service box lines
+    DrawLine(10, screenHeight / 2, screenWidth - 10, screenHeight / 2, WHITE);
+
     // Some system stats
     DrawText(TextFormat("Current FPS: %03i", GetFPS()), 15, screenHeight - 20, 20, WHITE);
 
     // Player info
     int textwidth = MeasureText("Player Score A", 20);
-    DrawText(TextFormat("Player A: %i", aiscore), screenWidth / 4 - textwidth / 2 , 20, 20, WHITE);
-    DrawText(TextFormat("Player B: %i", playerscore), screenWidth / 2 + screenWidth / 4 - textwidth / 2, 20, 20, WHITE);
+    DrawText(TextFormat("Player A: %i", aiscore), screenWidth / 4 - textwidth / 2 , 20, 30, WHITE);
+    DrawText(TextFormat("Player B: %i", playerscore), screenWidth / 2 + screenWidth / 4 - textwidth / 2, 20, 30, WHITE);
 }
+
 
 int main() {
     InitWindow(screenWidth, screenHeight, "Pong game");
