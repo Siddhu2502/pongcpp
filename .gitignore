@@ -72,3 +72,8 @@ CMakeLists.txt.user*
 *.dll
 *.exe
 
+.vscode
+.vcode/*
+
+build/Desktop_Qt_6_7_0-Debug
+build/Desktop_Qt_6_7_0-Debug/*
